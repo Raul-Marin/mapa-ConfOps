@@ -1,14 +1,14 @@
-# Próxima exploración
+# Próxima exploración · 2.0
 
-Esta carpeta contiene un recurso para aprender en equipo sobre dificultades reales del trabajo.
+Para preparar, revisar o retomar una exploración del equipo:
 
-Para preparar o revisar una exploración:
-1. Leer `.cursor/agents/acompanante-exploracion.md`.
-2. Aplicar `.cursor/skills/proxima-exploracion/SKILL.md` y su plantilla.
-3. Leer el mapa indicado por el usuario. Usar `mapas/mapa.md` si pide trabajar con el primer mapa de este paquete.
-4. Entregar un borrador o una revisión breve. Guardar solo si se solicita; conservar siempre el historial.
+1. Leer `agents/acompanante-exploracion.md` desde la raíz del repositorio.
+2. Aplicar `skills/proxima-exploracion/SKILL.md` y su plantilla `assets/plantilla-mapa.md`.
+3. Leer el mapa indicado por el usuario; `mapas/mapa.md` es la plantilla inicial de este paquete.
+4. Entregar un mapa completo. Guardar solo si se solicita y hay capacidad autorizada; conservar el historial.
 
-Los ejemplos de `ejemplos/` son ficticios y no son evidencias del equipo.
-No modificar la skill para resolver un caso concreto. Las decisiones y resultados van en el mapa.
-La revisión se inicia cuando el usuario la solicita; estos archivos no crean un proceso en segundo plano.
+Si no se pueden leer archivos, pedir el contenido de `INICIO-RAPIDO.md` y el mapa del equipo. No afirmar que se leyeron archivos inaccesibles.
 
+Los ejemplos de `ejemplos/` son ficticios, no evidencias del equipo. El equipo decide; las recomendaciones no son decisiones aprobadas. No modificar el método para resolver un caso concreto: evidencias y decisiones van en el mapa. No crear seguimiento autónomo.
+
+Para tareas de mantenimiento del recurso, consultar `docs/mantenimiento.md`. Estos archivos aportan instrucciones de proyecto; no registran por sí solos un subagente o una skill nativa.

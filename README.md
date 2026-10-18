@@ -1,4 +1,4 @@
-# Próxima exploración
+# Próxima exploración · 2.0
 
 ### Aprender juntos para cambiar cómo trabajamos.
 
@@ -6,7 +6,7 @@
 
 **Un recurso de _Cartografías de lo liminal_ · Raúl Marín · Shift+R**
 
-Un marco sencillo para convertir las dificultades del día a día en pruebas compartidas, aprendizajes y decisiones. Incluye un mapa editable, una skill y un agente que ayuda a preparar y revisar cada exploración.
+Un marco sencillo para convertir las dificultades del día a día en pruebas compartidas, aprendizajes y decisiones. Incluye un mapa editable, una skill portable y un agente definido mediante instrucciones. Puedes utilizarlo en Gemini, Claude, ChatGPT, Codex, Cursor y otros asistentes capaces de seguir instrucciones en texto. **El método viaja contigo; el mapa conserva la continuidad.**
 
 [Empezar](#empieza-con-una-dificultad-real) · [Instalación](docs/instalacion.md) · [Ejemplo completo](ejemplos/caso-completo.md) · [Guía del equipo](docs/guia-del-equipo.md) · [Fuentes y conectores](docs/fuentes-y-conectores.md)
 
@@ -33,23 +33,20 @@ Después de la prueba, el mismo mapa recoge evidencias, aprendizajes, decisiones
 
 ## Empieza con una dificultad real
 
-1. Descarga el repositorio desde **Code → Download ZIP** y descomprímelo, o clónalo.
-2. Abre la carpeta en **Cursor** y entra en un chat en modo **Agent**.
-3. Copia este mensaje y completa los corchetes:
+1. Abre [**INICIO-RAPIDO.md**](INICIO-RAPIDO.md), copia todo su contenido y pégalo en tu asistente de IA. También puedes adjuntarlo si el cliente lee Markdown.
+2. Completa la dificultad, un ejemplo real y el tiempo disponible al final del texto.
+3. Revisa el mapa propuesto con el equipo y conserva una copia para la siguiente sesión.
 
-```text
-Usa el agente acompanante-exploracion y la skill proxima-exploracion.
+**No necesitas instalar nada.** El archivo contiene el agente, el método y la plantilla. Si cambias de cliente, aporta las mismas instrucciones y tu último mapa.
 
-Nos está costando: [dificultad].
-Un ejemplo real es: [situación y fuente].
-Podemos dedicar: [tiempo].
-Participan: [personas o funciones].
+| Dónde trabajas | Cómo empezar |
+| --- | --- |
+| Gemini, Claude, ChatGPT u otro chat | Copiar [INICIO-RAPIDO.md](INICIO-RAPIDO.md) y añadir contexto. |
+| Codex, Claude Code o Gemini CLI, con acceso al proyecto | Abrir la carpeta y pedir que lea las instrucciones del proyecto y prepare una exploración. |
+| Cursor | Abrir la carpeta y pedir que use el agente `acompanante-exploracion`. |
+| Cliente que reconoce Agent Skills | Instalar la carpeta `skills/proxima-exploracion/` en la ubicación de tu cliente. |
 
-Prepara una prueba pequeña y guarda el borrador en mapas/mapa.md.
-Deja pendientes los datos que todavía no tenemos.
-```
-
-Revisa la propuesta con el equipo antes de probarla. Si prefieres trabajar en un chat, sigue la [ruta sin instalación](docs/instalacion.md#usarlo-en-un-chat).
+La compatibilidad común es **mediante texto**. El registro nativo de skills y subagentes depende de cada aplicación. Consulta la [instalación por cliente](docs/instalacion.md), la [matriz de compatibilidad](docs/compatibilidad.md) y el [ejemplo de cambio de cliente](ejemplos/cambio-de-cliente.md).
 
 ## Mira un caso ya completado
 
@@ -84,27 +81,32 @@ En la charla proponemos explorar el perfil **Forward-Deployed Learning Designer*
 
 | Recurso | Enlace |
 | --- | --- |
-| Instrucciones del agente para Cursor | [acompanante-exploracion.md](.cursor/agents/acompanante-exploracion.md) |
-| Skill del método | [SKILL.md](.cursor/skills/proxima-exploracion/SKILL.md) |
-| Plantilla reutilizable | [plantilla-mapa.md](.cursor/skills/proxima-exploracion/assets/plantilla-mapa.md) |
+| Todo lo necesario para un chat | [INICIO-RAPIDO.md](INICIO-RAPIDO.md) |
+| Instrucciones del agente, independientes del cliente | [acompanante-exploracion.md](agents/acompanante-exploracion.md) |
+| Skill del método | [SKILL.md](skills/proxima-exploracion/SKILL.md) |
+| Plantilla reutilizable | [plantilla-mapa.md](skills/proxima-exploracion/assets/plantilla-mapa.md) |
 | Primer mapa editable | [mapas/mapa.md](mapas/mapa.md) |
 | Ejemplo completo y revisado | [caso-completo.md](ejemplos/caso-completo.md) |
-| Material de entrada para una demo | [exploracion-demo.md](ejemplos/exploracion-demo.md) |
-| Instalación y primeros mensajes | [instalacion.md](docs/instalacion.md) |
+| Entrada para una demo | [exploracion-demo.md](ejemplos/exploracion-demo.md) |
+| Continuar en otro cliente | [cambio-de-cliente.md](ejemplos/cambio-de-cliente.md) |
+| Instalación, actualización y solución de problemas | [instalacion.md](docs/instalacion.md) |
+| Alcance y fuentes oficiales | [compatibilidad.md](docs/compatibilidad.md) |
 | Cómo sostener la práctica | [guia-del-equipo.md](docs/guia-del-equipo.md) |
 | Uso de fuentes y conectores | [fuentes-y-conectores.md](docs/fuentes-y-conectores.md) |
-| Orientación para el asistente del proyecto | [AGENTS.md](AGENTS.md) |
+| Entradas para clientes con acceso al proyecto | [AGENTS.md](AGENTS.md) · [CLAUDE.md](CLAUDE.md) · [GEMINI.md](GEMINI.md) |
+| Subagente opcional de Cursor | [adaptador Cursor](.cursor/agents/acompanante-exploracion.md) |
+| Cambios y mantenimiento | [CHANGELOG.md](CHANGELOG.md) · [mantenimiento.md](docs/mantenimiento.md) |
 
-## Alcance de esta primera versión
+## Alcance de la versión 2.0
 
-Funciona a petición del equipo. No instala conectores, programa reuniones ni vigila canales. Se pueden aportar notas manualmente o usar fuentes delimitadas si el entorno ya dispone de acceso.
+Funciona a petición del equipo. El agente es un rol de acompañamiento que puede seguir el propio asistente: no todos los clientes necesitan o admiten un subagente separado. En Cursor se incluye un adaptador nativo de solo lectura.
 
-El agente de Cursor trabaja en modo de solo lectura: devuelve su propuesta al asistente principal, que puede guardarla cuando se lo pidas. La memoria del proceso vive en el mapa y su historial.
+El recurso no necesita API keys, Python, Node, servidor ni conectores para utilizarse. Depende de tu acceso al asistente y de los límites de contexto y funciones de ese cliente. No activa vigilancia de canales ni seguimiento periódico. Conserva tu mapa fuera del chat para retomarlo después.
 
-Validación realizada: estructura de archivos, metadatos YAML, referencias locales y coherencia del ejemplo. Queda pendiente comprobarlo en cada instalación de Cursor y con los conectores de cada equipo.
+Las rutas nativas se han contrastado con documentación oficial. La comprobación de archivos y la evaluación del método se describen en [validación](docs/validacion.md); no se ha ejecutado una sesión real en cada producto. La vía de texto evita depender de una instalación específica, aunque ningún prompt puede garantizar respuestas idénticas en todos los modelos.
 
 ## Autoría
 
 **Raúl Marín · Shift+R**  
 Recurso preparado para **Cartografías de lo liminal**.  
-Portada creada con IA para este recurso. Versión 1.1 · octubre de 2026.
+Portada creada con IA para este recurso. Versión **2.0.0** · octubre de 2026.
