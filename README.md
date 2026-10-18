@@ -2,7 +2,7 @@
 
 ### Aprender juntos para cambiar cómo trabajamos.
 
-![Un mismo mapa. Tu IA. Tres personas consultan un mapa; Gemini, Codex, Claude, ChatGPT y Cursor aparecen conectados por un recorrido rosa. Próxima exploración 2.0, uso mediante texto.](docs/assets/portada.png)
+![Un mismo mapa. Tu IA. Tres personas consultan un mapa; Gemini, Codex, Claude, ChatGPT y Cursor aparecen conectados por un recorrido rosa. Próxima exploración 2.0, uso mediante texto.](docs/assets/portada-v2.png)
 
 **Un recurso de _Cartografías de lo liminal_ · Raúl Marín · Shift+R**
 
